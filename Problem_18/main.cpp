@@ -22,6 +22,10 @@ int main(int argc, char* argv[])
   else
     root = triangle.CreateFromFile("input_test.txt");
 
-  triangle.printOut();
-  cout << "Maximum total: " << root->m_weight << endl;
+  if(root != NULL){
+    triangle.printOut();
+    cout << "Maximum total: " << root->m_weight << endl;
+  }
+  
+  return 0;
 }
